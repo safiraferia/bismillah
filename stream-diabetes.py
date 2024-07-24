@@ -7,7 +7,7 @@ diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 # Judul web
 st.title('Prediksi Diabetes Sekarang, Yuk!')
 # Subjudul di bawah judul utama
-st.markdown("<h6 style='text-align: center; color: #555; background-color: rgba(192, 192, 192, 0.1); padding: 10px; border-radius: 10px;'>Ingat, Hasil Ini Hanya Prediksi Berdasarkan Data yang Anda Masukan.</h4>", unsafe_allow_html=True)
+st.markdown("<h6 style='text-align: center; color: #555; background-color: rgba(192, 192, 192, 0.3); padding: 8px; border-radius: 8px;'>Ingat, Hasil Ini Hanya Prediksi Berdasarkan Data yang Anda Masukan.</h6>", unsafe_allow_html=True)
 # Membagi kolom
 col1, col2 = st.columns(2)
 with col1:
