@@ -50,10 +50,6 @@ if diab_diagnosis:
         <div class="result-box">
             {diab_diagnosis}
         </div>
-        <div class="divider"></div>
-        <div class="additional-text">
-            Ingat, hasil ini hanyalah prediksi berdasarkan data yang Anda masukkan. Konsultasikan dengan dokter untuk diagnosis yang akurat.
-        </div>
     """, unsafe_allow_html=True)
 
 st.markdown("</div>", unsafe_allow_html=True)
