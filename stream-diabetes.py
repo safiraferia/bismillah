@@ -45,9 +45,15 @@ if st.button('Test Prediksi Diabetes'):
     else:
         diab_diagnosis = 'Pasien tidak terkena Diabetes'
 
-# Menampilkan hasil dengan garis tepi oval
-st.markdown(f"""
-    <div style='text-align: center; background-color: #f0f0f5; padding: 10px; border-radius: 25px; border: 2px solid #888;'>
-        {diab_diagnosis}
-    </div>
+f diab_diagnosis:
+    st.markdown(f"""
+        <div class="result-box">
+            {diab_diagnosis}
+        </div>
+        <div class="divider"></div>
+        <div class="additional-text">
+            Ingat, hasil ini hanyalah prediksi berdasarkan data yang Anda masukkan. Konsultasikan dengan dokter untuk diagnosis yang akurat.
+        </div>
     """, unsafe_allow_html=True)
+
+st.markdown("</div>", unsafe_allow_html=True)
