@@ -45,7 +45,7 @@ if st.button('Test Prediksi Diabetes'):
     else:
         diab_diagnosis = 'Pasien tidak terkena Diabetes'
 
-f diab_diagnosis:
+if diab_diagnosis:
     st.markdown(f"""
         <div class="result-box">
             {diab_diagnosis}
