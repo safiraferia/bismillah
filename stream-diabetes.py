@@ -48,4 +48,8 @@ if st.button('Test Prediksi Diabetes'):
         diab_diagnosis = 'Pasien tidak terkena Diabetes'
 
 # Menampilkan hasil di tengah
-st.markdown(f"<div style='text-align: center;'>{diab_diagnosis}</div>", unsafe_allow_html=True)
+st.markdown(f"""
+    <div style='text-align: center; background-color: rgba(255, 255, 255, 0.5); padding: 10px; border-radius: 10px;'>
+        {diab_diagnosis}
+    </div>
+    """, unsafe_allow_html=True)
