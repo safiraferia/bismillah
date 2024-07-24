@@ -6,7 +6,22 @@ diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 
 # Judul web
 st.title('Prediksi Diabetes Sekarang, Yuk!')
-
+# Gaya CSS untuk elemen dengan garis tepi oval
+st.markdown("""
+    <style>
+        .input-container, .output-container {
+            border-radius: 25px;
+            border: 2px solid #888;
+            padding: 10px;
+            background-color: #f9f9f9;
+            margin-bottom: 15px;
+        }
+        .output-container {
+            text-align: center;
+            background-color: #f0f0f5;
+        }
+    </style>
+""", unsafe_allow_html=True)
 # Membagi kolom
 col1, col2 = st.columns(2)
 
