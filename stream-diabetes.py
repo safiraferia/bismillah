@@ -45,11 +45,9 @@ if st.button('Test Prediksi Diabetes'):
     else:
         diab_diagnosis = 'Pasien tidak terkena Diabetes'
 
-if diab_diagnosis:
-    st.markdown(f"""
-        <div class="result-box">
-            {diab_diagnosis}
-        </div>
+# Menampilkan hasil di tengah
+st.markdown(f"""
+    <div style='text-align: center; background-color: rgba(128, 128, 128, 0.5); padding: 10px; border-radius: 10px;'>
+        {diab_diagnosis}
+    </div>
     """, unsafe_allow_html=True)
-
-st.markdown("</div>", unsafe_allow_html=True)
