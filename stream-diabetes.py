@@ -6,45 +6,8 @@ diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 
 # Judul web
 st.title('Prediksi Diabetes Sekarang, Yuk!')
-st.markdown("""
-    <style>
-        .input-box {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            margin: 10px 0;
-            background-color: #f9f9f9;
-        }
-        .input-box input {
-            border: none;
-            width: 100%;
-            padding: 5px;
-            border-radius: 5px;
-        }
-        .button {
-            background-color: #ff4b4b;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
-        }
-        .button:hover {
-            background-color: #ff6b6b;
-        }
-        .result-box {
-            text-align: center;
-            background-color: rgba(128, 128, 128, 0.5);
-            padding: 10px;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-    </style>
-""", unsafe_allow_html=True)
-
-# Membagi kolom
-col1, col2 = st.columns(2)
+# Membungkus seluruh elemen dalam satu container
+st.markdown("<div class='container'>", unsafe_allow_html=True)
 
 with col1:
     Pregnancies = st.text_input('Input Angka Kehamilan')
