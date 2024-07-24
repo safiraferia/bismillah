@@ -8,7 +8,8 @@ diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 st.title('Prediksi Diabetes Sekarang, Yuk!')
 # Membungkus seluruh elemen dalam satu container
 st.markdown("<div class='container'>", unsafe_allow_html=True)
-
+# Membagi kolom
+col1, col2 = st.columns(2)
 with col1:
     Pregnancies = st.text_input('Input Angka Kehamilan')
 
